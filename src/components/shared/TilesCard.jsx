@@ -10,6 +10,7 @@ const TilesCard = ({ tile }) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title grow">{tile.title}</h2>
+                <p>{tile.dimensions}</p>
                 <div className="card-actions justify-end">
                     <Link href={`/tiles/${tile.id}`} className="btn btn-primary ">View Details</Link>
                 </div>
