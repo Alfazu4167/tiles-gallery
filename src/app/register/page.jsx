@@ -4,6 +4,7 @@ import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const RegisterPage = () => {
     const { register,
@@ -22,10 +23,10 @@ const RegisterPage = () => {
             callbackURL: "/login",
         });
         if (error) {
-            alert(error.message)
+            toast.error(error.message)
         }
         if (res) {
-            alert("Your Account Created Successfully")
+            toast.success("Your Account Created Successfully")
         }
     }
     return (

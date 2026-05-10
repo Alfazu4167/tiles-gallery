@@ -3,6 +3,7 @@
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const LogInPage = () => {
     const { register,
@@ -19,7 +20,10 @@ const LogInPage = () => {
             callbackURL: "/",
         });
         if (error) {
-            alert(error.message)
+            toast.error(error.message)
+        }
+        if (res) {
+            toast.success("Successfully Logged in")
         }
     }
     return (
