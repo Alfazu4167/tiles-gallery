@@ -3,6 +3,8 @@
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
+import { FaGooglePlusG } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 
 const LogInPage = () => {
@@ -26,6 +28,11 @@ const LogInPage = () => {
             toast.success("Successfully Logged in")
         }
     }
+    const handleGoogleSignUp = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        })
+    }
     return (
         <div className='container mx-auto flex justify-center items-center bg-slate-100 h-[80vh] rounded-md mt-5'>
             <div className='p-4 rounded-xl space-y-3 '>
@@ -46,6 +53,8 @@ const LogInPage = () => {
                         <p className="mt-2">Don't have account yet? <Link className="text-red-500" href={"/register"}> Register Now</Link></p>
                     </fieldset>
                 </form>
+                <h2 className="text-xl text-center">Or </h2>
+                <button onClick={handleGoogleSignUp} className="btn with-full flex justify-center items-center"><FcGoogle /> Login with Google</button>
             </div>
 
         </div>
