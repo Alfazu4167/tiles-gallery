@@ -43,7 +43,7 @@ const RegisterPage = () => {
                         <label className="label">Photo Url</label>
                         <input type="text" className="input"
                             {...register("photo", { required: "Provide your email address" })}
-                            placeholder="Email" />
+                            placeholder="Photo Url" />
                         {errors.photo && <p className=" text-red-500">{errors.photo.message}</p>}
                         <label className="label">Email</label>
                         <input type="email" className="input"
