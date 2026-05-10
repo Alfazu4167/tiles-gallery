@@ -10,10 +10,10 @@ export default async function Home() {
   const tiles = await TilesData()
   console.log(tiles);
   return (
-    <>
+    <div className="my-15">
       <Banner></Banner>
       <NewArrivals tiles={tiles}></NewArrivals>
       <FeaturedTiles tiles={tiles}></FeaturedTiles>
-    </>
+    </div>
   );
 }

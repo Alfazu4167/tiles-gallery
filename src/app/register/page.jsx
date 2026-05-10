@@ -30,10 +30,10 @@ const RegisterPage = () => {
         }
     }
     return (
-        <div className='container mx-auto flex justify-center items-center bg-slate-100 h-[80vh] rounded-md mt-5'>
+        <div className='container mx-auto flex justify-center items-center bg-slate-100 max-h-[80vh] rounded-md mt-5'>
             <div className='p-4 rounded-xl space-y-3 '>
                 <h2 className="text-3xl font-bold ">Register Your Account</h2>
-                <form action="" onSubmit={handleSubmit(handleRegister)}>
+                <form onSubmit={handleSubmit(handleRegister)}>
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4 ">
                         <label className="label">Name</label>
                         <input type="text" className="input"

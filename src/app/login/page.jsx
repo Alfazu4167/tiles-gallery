@@ -34,7 +34,7 @@ const LogInPage = () => {
         })
     }
     return (
-        <div className='container mx-auto flex justify-center items-center bg-slate-100 h-[80vh] rounded-md mt-5'>
+        <div className='container mx-auto flex justify-center items-center bg-slate-100 max-h-[80vh] rounded-md mt-5'>
             <div className='p-4 rounded-xl space-y-3 '>
                 <h2 className="text-3xl font-bold ">Login Your Account</h2>
                 <form action="" onSubmit={handleSubmit(handleLogin)}>
@@ -49,12 +49,12 @@ const LogInPage = () => {
                             {...register("password", { required: "Provide a password" })}
                             placeholder="Password" />
                         {errors.password && <p className=" text-red-500">{errors.password.message}</p>}
-                        <input className="btn btn-neutral mt-2 w-full" type="submit" value="Login" />
-                        <p className="mt-2">Don't have account yet? <Link className="text-red-500" href={"/register"}> Register Now</Link></p>
+                        <input className="btn mt-2 w-full bg-[#4bebfa]" type="submit" value="Login" />
+                        <p className="mt-2">Don't have account yet? <Link className="text-red-500" href={"/register "}> Register Now</Link></p>
                     </fieldset>
                 </form>
-                <h2 className="text-xl text-center">Or </h2>
-                <button onClick={handleGoogleSignUp} className="btn with-full flex justify-center items-center"><FcGoogle /> Login with Google</button>
+                <div className="divider">OR</div>
+                <button onClick={handleGoogleSignUp} className="btn w-full flex justify-center items-center border border-[#47dae7] text-[#1c767e]"><FcGoogle /> Login with Google</button>
             </div>
 
         </div>
