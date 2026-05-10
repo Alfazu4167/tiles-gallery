@@ -18,7 +18,7 @@ const TilesDetailsPage = async ({ params }) => {
                 <p className='text-md'><span className='text-md font-bold'>Tiles material</span>: {tile.material}</p>
                 <p className='text-md'><span className='text-md font-bold'>Tiles dimensions</span>: {tile.dimensions}</p>
                 <div className="card-actions justify-end">
-                    <h2 className={` ${tile.inStock? "btn bg-green-400 text-white": "btn btn-warning"}`}>{tile.inStock? "In Stock":"Out of Stock"}</h2>
+                    <h2 className={` ${tile.inStock ? "btn bg-green-400 text-white" : "btn btn-warning"}`}>{tile.inStock ? "In Stock" : "Out of Stock"}</h2>
                 </div>
             </div>
         </div>
