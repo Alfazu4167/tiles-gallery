@@ -15,7 +15,7 @@ const Banner = () => {
                     <p className="mb-5 text-gray-500 text-md">
                         Discover minimalist textures and contemporary patterns designed to bring a clean, sophisticated look to every room.
                     </p>
-                    <Link href={'/tiles'} className="btn bg-[#47dae7]">Browse Now</Link>
+                    <Link href={'/all-tiles'} className="btn bg-[#47dae7]">Browse Now</Link>
                 </div>
             </div>
         </div>

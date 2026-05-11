@@ -10,7 +10,7 @@ const Navbar = () => {
     const user = session?.user;
     const li = <>
         <li className='font-semibold block text-md'><NavLink href={'/'}>Home</NavLink></li>
-        <li className='font-semibold block text-md'><NavLink href={'/tiles'}>All Tiles</NavLink></li>
+        <li className='font-semibold block text-md'><NavLink href={'/all-tiles'}>All Tiles</NavLink></li>
         <li className='font-semibold block text-md'><NavLink href={'/profile'}>My Profile</NavLink></li>
     </>
     return (
