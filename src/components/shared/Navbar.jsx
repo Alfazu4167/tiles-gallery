@@ -40,7 +40,7 @@ const Navbar = () => {
                     {isPending ? <PulseLoader color='#59cfd9' /> :
                         user ? <div className='flex items-center justify-center gap-2'>
                             <Image src={user?.image} alt={user?.name} width={40} height={40} referrerPolicy='no-referrer' className='rounded-full' />
-                            <h2>Hello, <span className='text-md font-bold'>{user?.name}</span></h2> <button className='btn bg-[#47dae7]' onClick={async () => await authClient.signOut()}>Log out</button></div> : <Link className='btn bg-[#47dae7]' href={'/login'}>Login</Link>
+                            <h2>Hello, <span className='text-md font-bold'>{user?.name}</span></h2> <button className='btn bg-[#47dae7] text-white' onClick={async () => await authClient.signOut()}>Log out</button></div> : <Link className='btn bg-[#47dae7] text-white' href={'/login'}>Login</Link>
                     }
 
                 </div>

@@ -49,7 +49,7 @@ const LogInPage = () => {
                             {...register("password", { required: "Provide a password" })}
                             placeholder="Password" />
                         {errors.password && <p className=" text-red-500">{errors.password.message}</p>}
-                        <input className="btn mt-2 w-full bg-[#4bebfa]" type="submit" value="Login" />
+                        <input className="btn mt-2 w-full bg-[#4bebfa] text-white" type="submit" value="Login" />
                         <p className="mt-2">Don't have account yet? <Link className="text-red-500" href={"/register "}> Register Now</Link></p>
                     </fieldset>
                 </form>

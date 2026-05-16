@@ -12,7 +12,7 @@ const TilesCard = ({ tile }) => {
                 <h2 className="card-title grow">{tile.title}</h2>
                 <p>{tile.dimensions}</p>
                 <div className="card-actions justify-end">
-                    <Link href={`/tile/${tile.id}`} className="btn bg-[#47dae7] ">View Details</Link>
+                    <Link href={`/tile/${tile.id}`} className="btn bg-[#47dae7] text-white">View Details</Link>
                 </div>
             </div>
         </div>

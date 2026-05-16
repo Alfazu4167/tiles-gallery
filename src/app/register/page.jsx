@@ -65,7 +65,7 @@ const RegisterPage = () => {
                             {...register("password", { required: "Provide a password" })}
                             placeholder="Password" />
                         {errors.password && <p className=" text-red-500">{errors.password.message}</p>}
-                        <input className="btn btn-neutral mt-2 w-full" type="submit" value="Register" />
+                        <input className="btn bg-[#47dae7] text-white mt-2 w-full" type="submit" value="Register" />
 
                     </fieldset>
                     <p className="mt-2 text-sm">Already have an account? <Link className="text-red-500" href={"/login "}> Login Now</Link></p>
