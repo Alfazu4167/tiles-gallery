@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Tiles Gallery | Home",
+  title: "Tiles Gallery ",
   description: "Discover minimalist textures and contemporary patterns designed to bring a clean, sophisticated look to every room.",
 };
 

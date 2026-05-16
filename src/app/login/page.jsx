@@ -35,7 +35,7 @@ const LogInPage = () => {
     }
     return (
         <div className='container mx-auto flex justify-center items-center bg-slate-100 h-[80vh] rounded-md mt-5'>
-            <div className='rounded-xl space-y-3 bg-base-200 border-base-300 rounded-box w-xs border p-4 '>
+            <div className='rounded-xl space-y-3 bg-base-200 border-base-300 rounded-box  border p-4 '>
                 <h2 className="text-3xl font-bold ">Login Your Account</h2>
                 <form action="" onSubmit={handleSubmit(handleLogin)}>
                     <fieldset className="fieldset ">
