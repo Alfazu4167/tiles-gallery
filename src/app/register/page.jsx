@@ -27,10 +27,12 @@ const RegisterPage = () => {
         }
         if (res) {
             toast.success("Your Account Created Successfully")
+           window.location.href='/login'
         }
+        
     }
     return (
-        <div className='container mx-auto flex justify-center items-center bg-slate-100 max-h-[80vh] rounded-md mt-5'>
+        <div className='container mx-auto flex justify-center items-center bg-slate-100 max-h-[60vh] rounded-md mt-5'>
             <div className='p-4 rounded-xl space-y-3 '>
                 <h2 className="text-3xl font-bold ">Register Your Account</h2>
                 <form onSubmit={handleSubmit(handleRegister)}>

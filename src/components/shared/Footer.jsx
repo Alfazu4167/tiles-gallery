@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer sm:footer-horizontal bg-[#957bfdcb]  p-10">
-            <aside>
+        <footer className="footer sm:footer-horizontal bg-[#957bfd81] mt-10  p-10 ">
+            <aside className='text-center'>
                 <nav className='flex flex-col gap-3'>
                     <h6 className="footer-title">Tiles Gallery</h6>
                     <a className="link link-hover">About us</a>
@@ -12,8 +12,8 @@ const Footer = () => {
                     <a className="link link-hover">Press kit</a>
                 </nav>
             </aside>
-            <nav>
-                <h6 className="footer-title">Social</h6>
+            <nav className='text-center'>
+                <h6 className="footer-title">Social Links</h6>
                 <div className="grid grid-flow-col gap-4">
                     <a>
                         <svg
